@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --primary: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-grey: hsl(217, 12%, 63%);
+    --Medium-grey: hsl(216, 12%, 54%);
+    --Dark-blue: hsl(213, 19%, 18%);
+    --Very-dark-blue: hsl(216, 12%, 8%);
+}
+
+*{
+    box-sizing: none;
+    margin: 0;
+    padding: 0;;
+    text-decoration: none;
+    text-decoration-style: none;
+    list-style: none;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+.flex { display: flex; }
+.col {flex-direction: column;}
+.flex-align-center { align-items: center; }
+.flex-justify-between { justify-content: space-between; }
+.flex-justify-around { justify-content: space-around; }
+.flex-justify-center { justify-content: center; }
+.flex-justify-end { justify-content: flex-end; }
+.flex-start { justify-content: flex-start; }
+
+html, body, container {
+    height: 100%;
+    background-color: var(--Very-dark-blue);
+}
+/*Mobile: 375px*/
+
+.bg-icon {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: rgb(58, 56, 56);
+}
+.bg-box {
+    width: 300px;
+    height: 360px;
+    padding: 2rem;
+    margin: 1rem;
+    background-color: var(--Dark-blue);
+    border-radius: 2rem;
+}
+
+h2 {
+    color: var(--White);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--Light-grey);
+}
+
+
+#submit {
+    padding: 1rem;
+    background: var(--primary);
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    color: var(--White);
+    border: none;
+    border-radius: 3rem;
+}
+
+ul li .btn {
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: rgb(58, 56, 56);
+    transition: 0.3 ease-in;
+}
+
+ul li .btn:hover {
+    background-color: var(--primary);
+    color: var(--White);
+    cursor: pointer;
+    transition: 0.5 ease-in;
+}
+
+ul li .btn:focus, ul li .btn:active {
+    background-color: var(--Medium-grey);
+    color: var(--White);
+    border: none;
+    transition: 0.2;
+}
+
+#submit:hover {
+    background-color: var(--White);
+    color: var(--primary);
+    cursor: pointer;
+}
+
+/*Thank you page*/
+
+.hidden {
+    display: none;
+}
+
+img {
+    height: 83px;
+    width: 130px;
+}
+
+#select {
+    color: var(--primary);
+    font-weight: 700;
+    padding: 0.7rem;
+    border-radius: 3rem;
+    background-color: rgb(58, 58, 58);
+}
+
+.text-align {
+    text-align: center;
+    line-height: 1.4;
+}
+
+
+/*Media queries DESKTOP*/
+
+@media (min-width: 1440px) {
+    .bg-box {
+        height: 330px;
+    }
+    button {
+        padding: 0.5rem;
+        margin-top: 0.3rem;
+    }
+    
+}
+
