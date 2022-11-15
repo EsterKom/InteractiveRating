@@ -12,15 +12,14 @@ const actualRating = document.getElementById("selected-rating");
 submitBtn.addEventListener("click", () => {
     
         boxRating.classList.add("hidden")
-        boxThanks.classList.remove("hidden")
-
+        boxThanks.classList.remove("hidden")       
+            });
+            
         ratingButtons.forEach((ratingButton) => {
             ratingButton.addEventListener('click', () => {
                 actualRating.innerText = ratingButton.innerHTML;
-            })
-        }) 
-    
-});
+        })
+    });
 
 
 
